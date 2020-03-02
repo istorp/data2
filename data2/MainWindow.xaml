@@ -13,7 +13,8 @@
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="68*"/>
+            <ColumnDefinition Width="351*"/>
             <ColumnDefinition Width="20"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -26,11 +27,11 @@
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Grid.Column="1" Grid.Row="1" FontSize="36" Grid.ColumnSpan="3"
-                   Margin="0,0,0,20" FontFamily="Verdana Pro Cond Semibold">Login Nordea banken</TextBlock>
-        <TextBlock Grid.Column="1" Grid.Row="2" >Förnamn</TextBlock>
-        <TextBox x:Name="förnamnText" Grid.Column="2" Grid.Row="2" Width="150px"></TextBox>
-        <Button x:Name="LeaveIn" Content="Lämna In" Grid.Column="1" Grid.Row="3" FontWeight="Bold" Grid.ColumnSpan="3" Margin="5" Click="LeaveIn_Click"/>
-        
+        <TextBlock Grid.Column="1" Grid.Row="1" FontSize="36" Grid.ColumnSpan="5"
+                   Margin="0,0,68,20" FontFamily="Verdana Pro Cond Semibold">Login Nordea banken</TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" Margin="0,0,185.702,39.444" Grid.RowSpan="2" >Förnamn</TextBlock>
+        <TextBox x:Name="förnamnText" Grid.Column="2" Grid.Row="2" Width="150px" Margin="18.333,0,17.702,39.444" Grid.RowSpan="2"></TextBox>
+        <Button x:Name="LeaveIn" Content="Lämna In" Grid.Column="1" Grid.Row="3" FontWeight="Bold" Grid.ColumnSpan="3" Margin="5,4.556,4.702,5.444" Click="LeaveIn_Click"/>
+        <TextBlock Grid.Column="1" Grid.Row="4">Hej!</TextBlock>
     </Grid>
 </Window>
